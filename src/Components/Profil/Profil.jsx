@@ -26,7 +26,7 @@ function Profil() {
       <div className="app-profil-bloc1">
         <div className="app-profil-name">
           <h3 className="name">Cyrille Gardey</h3>
-          <h5 className="name-job">Data Anlayst</h5>
+          <h5 className="name-job">Data Analyst</h5>
         </div>
       </div>
 
