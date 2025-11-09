@@ -1,0 +1,283 @@
+@import url('../Style/Style.css');
+
+/* .app-profil {
+  background-color: aqua;
+  position: fixed;
+  width: 19%;
+  margin-top: 25px;
+} */
+
+
+  .app-profil {
+    display: flex;
+    align-items: center;
+    position: inherit;
+    background-color: #1E1E1F;
+    width: 100%;
+    margin-top: 25px;
+    height: auto;
+    border-radius: 15px;
+    border: 1px solid #383838;
+    flex-wrap: wrap; 
+    overflow: hidden; /*  cache tout les element qui deborde */
+    /* padding-top: 10px; */
+  }
+
+  .image-circle {
+    border-radius: 14px;
+    height: 110px;
+    width: 105px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+
+  .profil-toggle-btn {
+    
+    background-color: #232325;
+    border: none;
+    border-bottom: 1px solid #383838;
+    color: #7DDFF2;
+    font-size: 1rem;
+    cursor: pointer;
+    border-bottom-left-radius: 14px;
+    transition: color 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    
+    
+  }
+
+
+  .app-profil-second-affi {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* ouverture */
+  .app-profil-second-affi.open {
+    max-height: 250px; 
+    /* flex-direction: row; */
+    flex-direction: column;
+    
+  }
+
+  .app-profil-info{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0; */
+
+  }
+
+  .email-bloc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    /* padding: 0.8rem; */
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    /* border-bottom: 1px solid #383838; */
+    border-top: 1px solid #383838;
+   
+
+  }
+  
+  .Mail{
+    background-color:#202022;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #383838;
+    
+
+
+  }
+
+  .Position{
+    background-color:#202022;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #383838;
+
+  }
+
+
+  .email-box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .email-bloc h5 {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .email-bloc h5:first-child {
+    
+    font-weight: bold;
+  }
+
+  
+
+  .localisation-bloc {
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    /* padding: 0.8rem; */
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    
+  }
+
+  .icon-icon{
+    display: flex;
+    /* align-content: center; */
+    align-content: center;
+    /* border: 1px solid #383838; */
+  }
+  .icon-icon ::before{
+  content: '';
+  position: absolute;
+
+  }
+
+  .localisation{
+    height: max-content;
+    margin: 0;
+    color: #C1C1C1;
+    
+  }
+
+  .ville {
+    align-content: center;
+    /* font-weight: bold; */
+    margin:0;
+  }
+
+  .app-profil-bloc1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    width: max-content;
+  }
+
+  .app-profil-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    width: max-content;
+    gap: 5px;
+  }
+
+  .name {
+    font-family: "Police-Courgette", sans-serif;
+    margin: 0;
+  }
+
+  .name-job {
+    margin: 0;
+    border-radius: 10px;
+    background-color: #2B2B2C;
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .App-profil-link{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 1px solid #383838;
+
+  }
+
+  .Link-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-content: center;
+    list-style-type: none; 
+    
+    a {
+      color: inherit;
+    }
+
+
+    li {
+      transition: transform 0.6s ease;
+      
+    }
+    
+  }
+  
+  
+  .Link-list li:hover{
+    color: #7DDFF2;
+    transform: scale(1.1);
+    /* background-color: #7DDFF2; */
+    
+    
+  }
+
+
+  @media only screen and (min-width: 750px) {
+    .image-circle {
+    border-radius: 14px;
+    height: 130px;
+    width: 125px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  
+}
+
+
+
+
+
+
+
+  /* .email-bloc::before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, #0066ff, #0099ff);
+  border-radius: 2px;
+  animation: slideIn 0.9s ease-out;
+} */

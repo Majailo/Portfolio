@@ -1,0 +1,58 @@
+.app-about{
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* margin: 5px; */
+    border-radius: 14px;
+    border: 1px solid #383838;
+    background-color: #1E1E1F;
+    padding: 3%;
+    padding-bottom: 40px;
+  
+
+ 
+  }
+
+  .app-about p {
+  font-size: 1rem; 
+  line-height: 1.5; 
+  color: #b9b8b8; 
+  margin-bottom: 1rem;
+}
+        
+
+
+.about-title {
+  position: relative;
+  display: inline-block;
+  font-size: 1 rem;
+  margin-bottom: 2rem;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #0887a0, #7DDFF2);
+  border-radius: 2px;
+  animation: slideIn 0.9s ease;
+}
+
+
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 70px;
+    opacity: 1;
+  }
+}
+
+

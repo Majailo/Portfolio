@@ -1,0 +1,14 @@
+.app-footer {
+    background-color: chocolate;
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 25px;
+  }
+
+@media (max-width: 1024px) {
+.app-footer {
+  display: none; 
+}
+  
+}

@@ -1,0 +1,48 @@
+$sizeW:370px;
+$sizeH:330px;
+
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color:#202022;
+    /* border: 1px solid #b30c0c;  */
+    border-radius: 14px; 
+    text-align: center;
+    border: 1px solid #383838;
+
+    p{
+        width: $sizeW;
+        
+        /* background-color: bisque; */
+    }
+
+    .description{
+        height: 125px;
+    }
+
+
+    a{
+         text-decoration: none;
+        color: inherit;
+    }
+    
+    
+}
+
+.card img{
+    width: $sizeW;
+    height: $sizeH;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    
+}
+.project-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 10px 20px;
+}
+
