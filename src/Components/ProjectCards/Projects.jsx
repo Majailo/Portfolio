@@ -2,6 +2,16 @@ import ProjectCards from "./ProjectCards";
 
 function Projects() {
   const my_projects = [
+
+    {
+      title: 'MEC Me Survive',
+      description: 'Jeu de type Brotato développé en Java',
+      url: "MEC_Me_Survive.png",
+      git: 'https://github.com/Majailo/MEC_Me_Survive'
+
+      
+    },
+
     {
       title: 'Hangman',
       description: 'Jeu du pendu',

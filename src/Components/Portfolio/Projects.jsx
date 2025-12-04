@@ -5,11 +5,20 @@ import Html5 from "../Svg/Html5";
 import React from "../Svg/React";
 import Sql from "../Svg/Sql";
 import PostgreSql from "../Svg/PostgreSql";
-import Css from "../Svg/Css"
+import Css from "../Svg/Css";
+import Java from "../Svg/java"
 
 
 function Projects() {
   const my_projects = [
+    {
+      title: 'MEC Me Survive',
+      description: "Jeu de type Brotato développé en Java. Le joueur doit survivre à des vagues d’ennemis de plus en plus difficiles, tout en ayant la possibilité d’acheter des améliororations à la fin de chaque round pour renforcer ses capacités et progresser dans le jeu.",
+      url: "MEC_Me_Survive.png",
+      svg: [<Java/>],
+      git: 'https://github.com/Majailo/MEC_Me_Survive'
+    },
+
     {
       title: 'Hangman',
       description: 'Jeu du pendu réalisé dans le cadre d’une piscine à Epitech, en Python avec Pygame. Séparation de la partie graphique et de la partie fonctionnelle. Réalisation 100 % orientée objet pour la partie fonctionnelle.',
